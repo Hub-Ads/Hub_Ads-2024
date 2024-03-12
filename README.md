@@ -1,12 +1,35 @@
-<h1 align="center">hub-ads</h1>
+ <h1 align="center">:file_cabinet: hub-ads</h1>
 
-## 📝 Descrição
-Repositório do projeto do Hub de links da turma de ADS-1º/2024
+## 📜 Descrição
 
-## 🎯 Objetivos
+Repositório do projeto de um Hub de links da turma ADS-1º/2024
 
+## :dart: Objetivo
 
-<hr>
+O repositório foi criado para documentar e salvar o progresso e desenvolvimento do projeto. Tivemos a ideia de fazer o hub para simplificar o acesso da turma aos links e futuramente incluir links úteis como de cursos, sites de tutoriais etc. 
+
+## 🔧 Ferramentas utilizadas
+-   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" width="15px;"/>  VSCODE;          
+-   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg" width="15px;"/>  CHROME;          
+
+## ⚙️ Tecnologias utilizadas
+-   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg" width="14px;"/> HTML;
+-   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" width="14px"/> CSS;
+  
+## 📝 Documentação
+
+O curso é dividido em 4 módulos apresentados como playlists:
+- <a href="https://www.youtube.com/watch?v=Ejkb_YpuHWs&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n">Módulo 1</a>
+- <a href="https://www.youtube.com/watch?v=vPNIAJ9B4hg&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s">Módulo 2</a>
+- <a href="https://www.youtube.com/watch?v=ofFgnDtn_1c&list=PLHz_AreHm4dmcAviDwiGgHbeEJToxbOpZ">Módulo 3</a>
+- <a href="https://www.youtube.com/watch?v=zHKHMmEG9vE&list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT">Módulo 4</a>
+
+Os 4 módulos são divididos em aulas menores. 
+De início, a documentação desse repositório será realizada a cada dia de estudos (dia em que os 3 conseguem se reunir para estudar via call). 
+O título dos commits serão o mesmo título da aula em que assistirmos por último no dia.
+
+###### Caso se faça necessário, serão feitos mais de um commit por dia.
+## :handshake: Colaboradores
 
 <table>
   <tr>
