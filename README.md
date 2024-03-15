@@ -40,7 +40,7 @@ O título dos commits serão o mesmo título da aula em que assistirmos por últ
       <a href="https://github.com/OtavioMendesSantos" target="_blank">
         <img src="https://avatars.githubusercontent.com/u/145459372?v=4" width="100px;" alt="Foto de Otavio Mendes Santos no GitHub"/><br>
         <sub>
-          <b>Otavio Mendes Santos</b>
+          <b>Otavio Mendes</b>
         </sub>
       </a>
     </td>
@@ -56,7 +56,7 @@ O título dos commits serão o mesmo título da aula em que assistirmos por últ
       <a href="https://github.com/CarlosCafeJs" target="_blank">
         <img src="https://avatars.githubusercontent.com/u/129197782?v=4" width="100px;" alt="Foto de Carlos Henrique dos Santos no GitHub"/><br>
         <sub>
-          <b>Carlos Henrique dos Santos</b>
+          <b>Carlos Henrique</b>
         </sub>
       </a>
     </td>
