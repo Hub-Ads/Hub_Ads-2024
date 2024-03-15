@@ -9,12 +9,15 @@ Repositório do projeto de um Hub de links da turma ADS-1º/2024
 O repositório foi criado para documentar e salvar o progresso e desenvolvimento do projeto. Tivemos a ideia de fazer o hub para simplificar o acesso da turma aos links e futuramente incluir links úteis como de cursos, sites de tutoriais etc. 
 
 ## 🔧 Ferramentas utilizadas
--   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" width="15px;"/>  VSCODE;          
--   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg" width="15px;"/>  CHROME;          
+<div>
+    <p align="left"> <a href="https://github.com/Hub-Ads"><img src="https://skillicons.dev/icons?i=figma,vscode,github"> </a> </p>
+</div>
 
 ## ⚙️ Tecnologias utilizadas
--   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg" width="14px;"/> HTML;
--   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" width="14px"/> CSS;
+<div>
+   <img src="https://img.shields.io/badge/HTML5-%23f06529?style=for-the-badge&logo=html5&logoColor=%23f06529&labelColor=%23303030">
+   <img src="https://img.shields.io/badge/CSS3-%233067e6?style=for-the-badge&logo=css3&logoColor=%232965f1&labelColor=%23303030">
+</div>
   
 ## 📝 Documentação
 
