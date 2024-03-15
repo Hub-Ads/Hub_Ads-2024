@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html{
+    box-sizing: border-box;
+
+    --averagePadding: 10px;
+
+    --bigRadius: 25px;
+    --averageRadius: 15px;
+    --smallRadius: 10px;
+
+    --titleFont:  "Roboto", sans-serif;
+    --textFont: "Inter", sans-serif;
+
+    --color01: #F05803;
+    --color02: #FFAC7D;
+    --color03: #0334E1;
+    --color04: #D9E5F8;
+    --color05: #AF0E8C;
+    --backgroundColor: #f4f4f4; 
+
+    --fontColor: #FFFFFF;
+}
+
+/* ----- Estilização Geral ----- */
+body{
+    background-color: var(--backgroundColor);
+}
+
+h1,h2,p{
+    margin: 0;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box
+}
+
+/* ----- Estilização do Header ----- */
+.header{
+    background-color: var(--color01);
+    color: var(--fontColor);
+    font-family: var(--titleFont);
+    font-size: 1rem;
+    border-radius: 0 0 0 50px;
+    padding: 30px 0 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header > img{
+    width: 2rem;
+    margin-left: 20px;
+}
+
+/* ----- Estilização do Main ----- */
+main{
+    margin-top: 30px;
+    font-family: var(--textFont);
+}
+
+main h2{
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+/* ----- Estilização Article Atividade ----- */
+.activities-container{
+    padding: 0 0 30px 0 ;
+}
+
+.activities-list{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    box-sizing: border-box;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 100%;
+    height: 220px; /* Consertar isso */
+    padding: 0 10px;
+    position: relative;
+    user-select: none;
+}
+
+/*
+TODO: implementar scrollbar estilizada / funcionalidade de scroll no pc parecida com mobile.
+TODO: Lista abaixo incompleta
+*/
+
+.activities-list::-webkit-scrollbar {
+    height: 10px;
+    border-radius: var(--smallRadius);
+}
+
+.activities-list::-webkit-scrollbar-track {
+    background: var(--backgroundColor); 
+}
+
+.activities-list::-webkit-scrollbar-thumb {
+    background:  var(--color02); 
+    border-radius: var(--smallRadius);
+}
+
+.activities-list::-webkit-scrollbar-thumb:hover {
+    background: var(--color01); 
+}
+
+.activity-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: end ;
+    border: 2px solid #000;
+    border-radius: var(--averageRadius);
+    height: 180px;
+    width: 150px;
+    position: relative;
+    top: 20px;
+}
+
+.activity-card > .img-background{
+    background-color: var(--color05);
+    border-radius: var(--averageRadius);
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    position: relative;
+    right: -10px;
+    top: -20px;
+}
+
+.activity-card > .activity-name{
+    width: 150px;
+    height: 2.5rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* ----- Estilização Article Cursos ----- */
+.tips-container{
+    padding: 0 0 30px 0 ;
+}
+
+.tips-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+}
+
+.card-tip{
+   
+    flex: 0 ;
+}
+
+.card-tip > img{
+    background-color: var(--color01);
+    padding: var(--averageRadius);
+    border-radius: var(--averageRadius);
+}
+
+.card-tip > p{
+    margin-top: 10px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.tips-container a{
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* ----- Estilização Article Contatos ----- */
+
+.contacts-container h2{
+    width: fit-content;
+    position: absolute;
+    background-color: var(--color04);
+    margin-bottom: 0;
+    padding: 10px;
+    border-top-left-radius: var(--averageRadius);
+    border-top-right-radius: var(--averageRadius);
+    border: 1px solid #000000;
+    border-bottom: none;
+}
+
+.contacts-list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 50px 10px;
+    padding: 10px;
+    background-color: var(--color04);
+       
+    border-radius: var(--averageRadius);
+    border-top-left-radius: 0;
+    border: 1px solid #000000;
+}
+
+.contacts-list li{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    
+    padding: 10px;
+    border-radius: var(--bigRadius);
+    background-color: var(--color03);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contacts-list li a {
+    color: #FFFFFF;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+
+.contacts-list li button{
+    border: none;
+    border-radius: 50%;
+    background-color: #7A94EF;
+    width: 36px;
+    height: 36px;
+}
+
+.contacts-list li button img{
+    width: 25px;
+    height: 25px; 
+}
+
+/* ----- Específico Professores ----- */
+.teachers-container{
+    position: relative;
+}
+
+.teachers-container h2{
+    left: 0;
+    top: -47px;
+}
+
+/* ----- Específico Secretaria ----- */
+.secretary-container{
+    position: relative;
+}
+
+.secretary-container h2{
+    right: 10px; 
+    top: -47px;
+}
+
+.secretary-container .contacts-list{
+    border-top-right-radius: 0;
+    border-top-left-radius: var(--averageRadius);
+}
+
+/* ----- Estilização ADSFLIX ----- */
+.adsflix-container{
+    background-color: #303030;
+    padding: 0 0 20px 0 ;
+    border-radius: 0 var(--bigRadius);
+}
+
+.adsflix-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    border-top-right-radius: var(--bigRadius);
+    background-color: #000;
+    height: 60px;
+    padding: 0 10px;
+}
+
+.adsflix-header h2{
+    margin: 0;
+    color: #ff0000;
+}
+
+.adsflix-menu ul{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    color: #e3e3e3;
+}
+
+.movies-container h3{
+    color: #e3e3e3;
+    text-align: center;
+}
+
+.card-container .card-list{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0 10px;
+    gap: 20px;
+}
+
+.movie-card{
+    flex: 0;
+}
+
+.card-thumbnail{
+    width: 180px;
+    height: 90px;
+    border-radius: var(--averageRadius);
+    background-color: #1f1f1f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-description{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0 0 0;
+}
+
+.adsflix-button{
+    background-color: #ff0000;
+    color: #ffffff;
+    border: none;
+    padding: 13px 26px;
+    border-radius: var(--bigRadius);
+    font-size: 1rem;
+}
+
+.teacher-thubnail{
+    width: 150px;
+    height: 150px;
+    background-color: #1f1f1f;
+    border-radius: 50%;
+}
+
+/* ----- Estilização Contatos ----- */
+.contact-container{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.contact-container input, textarea, button{
+    display: block;
+}
+
+.contact-container h2{
+    text-align: center;
+}
+
+.input-contact{
+    width: 250px;
+    padding: 12px 24px;
+    border-radius: var(--bigRadius);
+    border: 1px solid #000000;
+}
+
+.message-contact{
+    width: 250px;
+    padding: 12px 24px;
+    border-radius: var(--bigRadius);
+    border: 1px solid #000000;
+    resize: vertical;
+    min-height: 150px;
+    max-height: 300px;
+}
+
+.button-contact{
+    margin: auto;
+    padding: 12px 24px;
+    border-radius: var(--bigRadius);
+    border: 1px solid #000000;
+    background-color: #303030;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+/* ----- Estilização do Footer ----- */
+footer{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    color: #4E342E;
+    font-family: var(--textFont);
+    background-color: #e3e3e3;
+    margin: 30px 0 0 0;
+    padding: 20px;
+}
+
+footer > p{
+    font-size: 1.5rem;
+    display: block;
+    
+}
+
+.buy-me-a-coffee{
+    display: flex;
+}
+
+.buy-me-a-coffee img{
+    width: 60px;
+    height: 60px;
+}
+
+.buy-me-a-coffee a{
+    background-color:#4E342E;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: var(--bigRadius);
+    display: block;
+    text-align: center;
+}
+
