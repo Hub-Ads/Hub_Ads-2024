@@ -21,6 +21,9 @@ O repositório foi criado para documentar e salvar o progresso e desenvolvimento
   
 ## 📝 Documentação
 
+### 📑 Commits Semânticos
+Feito com base no documentação do [Conventional Commits](https://www.conventionalcommits.org/pt-br/v1.0.0/) e neste [README](https://github.com/iuricode/padroes-de-commits)
+
 <!-- O curso é dividido em 4 módulos apresentados como playlists:
 - <a href="https://www.youtube.com/watch?v=Ejkb_YpuHWs&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n">Módulo 1</a>
 - <a href="https://www.youtube.com/watch?v=vPNIAJ9B4hg&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s">Módulo 2</a>
