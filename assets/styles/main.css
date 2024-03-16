@@ -396,13 +396,16 @@ TODO: Lista abaixo incompleta
 /* ----- Estilização do Footer ----- */
 footer{
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    gap: 20px;
     justify-content: center;
     color: #4E342E;
     font-family: var(--textFont);
     background-color: #e3e3e3;
     margin: 30px 0 0 0;
     padding: 20px;
+    z-index: 2;
+    position: relative;
 }
 
 footer > p{
@@ -430,3 +433,12 @@ footer > p{
     text-align: center;
 }
 
+/* ----- Estilização Arrow Up ----- */
+.to-top-container{
+    position: fixed;
+    height: 46px;
+    height: 46px;
+    right: 20px;
+    bottom: 20px;
+    z-index: 0;
+}
