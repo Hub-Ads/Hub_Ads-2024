@@ -183,6 +183,9 @@ TODO: Lista abaixo incompleta
 }
 
 /* ----- Estilização Article Contatos ----- */
+.contacts-container{
+    position: relative;
+}
 
 .contacts-container h2{
     width: fit-content;
@@ -194,6 +197,7 @@ TODO: Lista abaixo incompleta
     border-top-right-radius: var(--averageRadius);
     border: 1px solid #000000;
     border-bottom: none;
+    cursor: pointer;
 }
 
 .contacts-list{
@@ -234,6 +238,7 @@ TODO: Lista abaixo incompleta
     background-color: #7A94EF;
     width: 36px;
     height: 36px;
+    cursor: pointer;
 }
 
 .contacts-list li button img{
@@ -333,6 +338,13 @@ TODO: Lista abaixo incompleta
     margin: 5px 0 0 0;
 }
 
+.button-container{
+    display: flex;
+    gap: 15px;
+    justify-content: end;
+    padding: 10px;
+}
+
 .adsflix-button{
     background-color: #ff0000;
     color: #ffffff;
@@ -340,6 +352,7 @@ TODO: Lista abaixo incompleta
     padding: 13px 26px;
     border-radius: var(--bigRadius);
     font-size: 1rem;
+    cursor: pointer;
 }
 
 .teacher-thubnail{
@@ -391,6 +404,7 @@ TODO: Lista abaixo incompleta
     background-color: #303030;
     color: #FFFFFF;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 /* ----- Estilização do Footer ----- */
@@ -441,4 +455,53 @@ footer > p{
     right: 20px;
     bottom: 20px;
     z-index: 0;
+}
+
+.to-top-container img{
+    cursor: pointer;
+}
+
+/* ----- Estilização Resposividade ----- */
+@media (min-width:600px){
+    body{
+        --maxWidth: 1200px;
+    }
+
+    .header{
+        max-width: var(--maxWidth);
+        margin: auto;
+        border-bottom-right-radius: var(--bigRadius);
+    }
+   
+    .activities-container, .tips-container h2{
+        text-align: center;
+    }
+    
+    .activities-container{
+        max-width: fit-content; 
+        margin: auto;
+    }
+
+
+    .tips-container{
+        max-width: var(--maxWidth);
+        margin: auto;
+    }
+    
+    .contacts-container{
+        margin: auto;
+        max-width: 800px;
+    }
+
+    .adsflix-container{
+        max-width: var(--maxWidth);
+        margin: 10px auto;
+        border-top-left-radius: var(--bigRadius);
+        border-bottom-right-radius: var(--bigRadius);
+    }
+    
+    .adsflix-header{
+        border-top-left-radius: var(--bigRadius);
+    }
+
 }
