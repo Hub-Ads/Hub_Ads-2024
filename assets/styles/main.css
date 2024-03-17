@@ -257,18 +257,56 @@ TODO: Lista abaixo incompleta
 }
 
 /* ----- Específico Secretaria ----- */
-.secretary-container{
+.secretaries-container{
     position: relative;
 }
 
-.secretary-container h2{
+.secretaries-container h2{
     right: 10px; 
     top: -47px;
 }
 
-.secretary-container .contacts-list{
+.secretaries-container .contacts-list{
     border-top-right-radius: 0;
     border-top-left-radius: var(--averageRadius);
+}
+
+/* ----- Específico Toggle Contacts ----- */
+/* TODO: Reformular de maneira inteligente / colocar PALETA de cores correta */
+.contacts-container >:not(.hidden){
+   z-index: 1;
+}
+
+.contacts-container >:not(.hidden) > h2{
+    background-color: var(--color02);    
+}
+
+.contacts-container >:not(.hidden) > .contacts-list{
+    background-color: var(--color02);    
+}
+
+.contacts-container >:not(.hidden) > .contacts-list li{
+    background-color: var(--color01);    
+}
+
+.contacts-container >:not(.hidden) > .contacts-list button{
+    background-color: var(--color02);    
+}
+
+.contacts-container .hidden{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+.contacts-container .hidden > h2{
+    height: 100px;
+}
+
+.contacts-container .hidden > .contacts-list{
+    display: none;
 }
 
 /* ----- Estilização ADSFLIX ----- */
