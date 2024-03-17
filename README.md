@@ -22,7 +22,15 @@ O repositório foi criado para documentar e salvar o progresso e desenvolvimento
 ## 📝 Documentação
 
 ### 📑 Commits Semânticos
-Feito com base no documentação do [Conventional Commits](https://www.conventionalcommits.org/pt-br/v1.0.0/) e neste [README](https://github.com/iuricode/padroes-de-commits)
+Lista feita com base no documentação do [Conventional Commits](https://www.conventionalcommits.org/pt-br/v1.0.0/) e neste [README](https://github.com/iuricode/padroes-de-commits), mostrando a descrição dos commits utilizados.
+
+ Tipo do Commit | Emoji | Palavra Chave
+ -------------- | ----- | -------------
+ Bug Fix | 🐛 `:bug:`	| `fix`
+ Comentários | 💡 `:bulb:` | `docs`
+ Documentação | 📚 `:books:` | `docs`
+ Estilização de Interface | 💄 `:lipstick:` | `feat`
+ Novo recurso | ✨ `:sparkles:`| `feat`
 
 <!-- O curso é dividido em 4 módulos apresentados como playlists:
 - <a href="https://www.youtube.com/watch?v=Ejkb_YpuHWs&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n">Módulo 1</a>
