@@ -4,6 +4,7 @@
 
 /* ----- Importando CSS Externo ----- */
 @import url('./dragscroll.css');
+@import url('./tooltip.css');
 
 /* ----- Estilização HTML e Variáveis Globais ----- */
 html{

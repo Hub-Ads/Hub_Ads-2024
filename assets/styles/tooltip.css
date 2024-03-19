@@ -1,0 +1,19 @@
+.tooltip{
+    display: block;
+    position: absolute;
+    z-index: 100;
+    background-color: #FFAC7D;
+    border: 5px solid #F05803;
+    border-radius: 5px;
+    width: fit-content;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #fff;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+    width: 175px;
+}
+
+/* .tooltip[data-tooltip="hidden"]{
+    display: none;
+} */
