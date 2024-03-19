@@ -1,0 +1,7 @@
+[data-scroll="drag-items"]{
+    cursor: grab;
+}
+
+[data-scroll="drag-items"].active{
+    cursor: grabbing;
+}
