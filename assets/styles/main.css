@@ -405,6 +405,29 @@ TODO: Lista abaixo incompleta
     border-radius: 50%;
 }
 
+/* ----- Estilização Scrollbar ADSFLIX ----- */
+.card-list::-webkit-scrollbar {
+    height: 10px;
+    border-radius: var(--smallRadius);
+}
+
+.card-list::-webkit-scrollbar-track {
+    background: #3e3e3e; 
+}
+
+.card-list::-webkit-scrollbar-thumb {
+    background:  #242424; 
+    border-radius: var(--smallRadius);
+}
+
+.card-list::-webkit-scrollbar-thumb:hover {
+    background: #222;
+}
+
+/* 
+Todo: Decidir estilização das scrollbars, talvez fique melhor apenas as removendo.
+*/
+
 /* ----- Estilização Contatos ----- */
 .contact-container{
     margin-top: 30px;
