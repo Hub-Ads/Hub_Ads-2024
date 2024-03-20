@@ -31,6 +31,7 @@ Lista feita com base no documentação do [Conventional Commits](https://www.con
  Documentação | 📚 `:books:` | `docs`
  Estilização de Interface | 💄 `:lipstick:` | `feat`
  Novo recurso | ✨ `:sparkles:`| `feat`
+ Refatoração	| ♻️ `:recycle:`	| `refactor`
 
 <!-- O curso é dividido em 4 módulos apresentados como playlists:
 - <a href="https://www.youtube.com/watch?v=Ejkb_YpuHWs&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n">Módulo 1</a>
