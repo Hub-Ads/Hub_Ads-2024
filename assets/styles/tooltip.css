@@ -12,6 +12,7 @@
     color: #fff;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
     width: 175px;
+    transform: translate(-100%, -100%);
 }
 
 /* .tooltip[data-tooltip="hidden"]{

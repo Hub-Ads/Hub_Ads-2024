@@ -1,10 +1,47 @@
 export default function initTooltip(){
     const tooltips = document.querySelectorAll('[data-tooltip]')
-
+    
     tooltips.forEach((item)=>{
-        item.addEventListener('mouseenter', onMouseEnter)
+        item.addEventListener('mouseenter', onMouseOver)
     })
+    
+    function onMouseOver(event){
+        const tooltipBox = createTooltipBox(this)
+    
+        onMouseMove.tooltipBox = tooltipBox
+        this.addEventListener('mousemove', onMouseMove)
+    
+        onMouseLeave.tooltipBox = tooltipBox
+        onMouseLeave.element = this
+        this.addEventListener('mouseleave', onMouseLeave)
+        
+        onClick.tooltipBox = tooltipBox
+        onClick.element = this
+        this.addEventListener('click', onClick)
+    }
+    
+    const onMouseLeave = {
+        handleEvent(){
+            this.tooltipBox.remove()
+            this.element.removeEventListener('mouseleave', onMouseLeave)
+            this.element.removeEventListener('mousemove', onMouseMove)
+            this.element.removeEventListener('click', onClick)
+        },
+    }
+    
+    const onClick = {
+        handleEvent(){
+            this.tooltipBox.innerText = 'Copiado Para Área de Tranferência'
+        }
+    }
 
+    const onMouseMove = {
+        handleEvent(event){
+            this.tooltipBox.style.top = event.pageY + -10 + 'px'
+            this.tooltipBox.style.left = event.pageX + -10 + 'px'
+        }
+    }
+    
     function createTooltipBox(element){
         const tooltipBox = document.createElement('div')
         const text = element.getAttribute('aria-label')
@@ -13,26 +50,8 @@ export default function initTooltip(){
         document.body.appendChild(tooltipBox)
         return tooltipBox
     }
-
-    function onMouseEnter(event){
-        const tooltipBox = createTooltipBox(this)
-         
-        tooltipBox.style.top = event.pageY + -60 + 'px'
-        tooltipBox.style.left = event.pageX - 250 + 'px'
-
-        onMouseLeave.tooltipBox = tooltipBox
-        onMouseLeave.element = this
-        this.addEventListener('mouseleave', onMouseLeave)
-    }
-    
-    const onMouseLeave = {
-        handleEvent(){
-            this.tooltipBox.remove()
-            this.element.removeEventListener('mouseleave', onMouseLeave)
-        }
-    }
 }
 
 /* 
-Todo: Refatorar todo o código, não gostei do resultado
+TODO: Adicionar switch para este código atender a vários tipos de tooltip.
 */
