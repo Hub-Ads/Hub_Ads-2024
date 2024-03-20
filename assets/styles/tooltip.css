@@ -9,12 +9,9 @@
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    text-align: center;
     color: #fff;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.5);
     width: 175px;
     transform: translate(-100%, -100%);
 }
-
-/* .tooltip[data-tooltip="hidden"]{
-    display: none;
-} */
