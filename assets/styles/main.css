@@ -119,34 +119,71 @@ TODO: Lista abaixo incompleta
 .activity-card {
     display: flex;
     flex-direction: column;
-    justify-content: end ;
-    border: 2px solid #000;
-    border-radius: var(--averageRadius);
-    height: 180px;
+    justify-content: space-between ;
+    gap: 10px;
     width: 150px;
+    flex-shrink: 0;
     position: relative;
-    top: 20px;
-}
-
-.activity-card > .img-background{
+    border: 1px solid #000;
+    border-radius: var(--averageRadius);
+    height: 200px;
     background-color: var(--color05);
-    border-radius: var(--averageRadius);
-    width: 150px;
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
-    position: relative;
-    right: -10px;
-    top: -20px;
+    color: #fff;
 }
 
-.activity-card > .activity-name{
-    width: 150px;
-    height: 2.5rem;
+.activity-date{
+    background-color: var(--color01);
+    border-top-left-radius: var(--averageRadius);
+    border-top-right-radius: var(--averageRadius);
     text-align: center;
+    padding: 5px;
+}
+
+.activity-module{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.activity-description{
+    margin: 0 20px;
     font-size: 0.9rem;
+    text-align: center;
+    height: 70px;
+    position: relative;
+    overflow: hidden;
+}
+
+.activity-description::after{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    width: 100%;  
+    height: 50%;
+    width: 100%;
+    background: linear-gradient(to top,
+    #AF0E8C 20%, 
+       rgba(255,255,255, 0) 80%
+    );
+}
+
+.activity-button{
+    border: none;
+    border-top-left-radius: var(--bigRadius);
+    border-top-right-radius: var(--bigRadius);
+    width: fit-content;
+    margin: 0 auto;
+    padding: 10px 12px 6px 12px;
+    line-height: 0.9rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: var(--color03);
+    cursor: pointer;
 }
 
 /* ----- Estilização Article Cursos ----- */
