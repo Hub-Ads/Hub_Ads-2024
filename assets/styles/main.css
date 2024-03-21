@@ -196,14 +196,17 @@ TODO: Lista abaixo incompleta
 .contacts-container h2{
     width: fit-content;
     position: absolute;
-    background-color: var(--color04);
+    color: #fff;
+    font-size: 1.2rem;
     margin-bottom: 0;
-    padding: 10px;
-    border-top-left-radius: var(--averageRadius);
-    border-top-right-radius: var(--averageRadius);
+    padding: 12px 24px;
+    border-top-left-radius: var(--bigRadius);
+    border-top-right-radius: var(--bigRadius);
     border: 1px solid #000000;
     border-bottom: none;
     cursor: pointer;
+    text-transform: uppercase;
+    -webkit-touch-callout: none;
 }
 
 .contacts-list{
@@ -212,9 +215,8 @@ TODO: Lista abaixo incompleta
     gap: 10px;
     margin: 50px 10px;
     padding: 10px;
-    background-color: var(--color04);
-       
-    border-radius: var(--averageRadius);
+    background-color: var(--color03);
+    border-radius: var(--bigRadius);
     border-top-left-radius: 0;
     border: 1px solid #000000;
 }
@@ -223,7 +225,6 @@ TODO: Lista abaixo incompleta
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    
     padding: 10px;
     border-radius: var(--bigRadius);
     background-color: var(--color03);
@@ -241,10 +242,16 @@ TODO: Lista abaixo incompleta
 .contacts-list li button{
     border: none;
     border-radius: 50%;
-    background-color: #7A94EF;
+    background-color: rgb(255, 143, 78);
     width: 36px;
     height: 36px;
     cursor: pointer;
+    transition: 0.2s;
+}
+
+.contacts-list li button:hover{
+    background-color: rgb(254, 127, 53);
+    transform: scale(1.2);
 }
 
 .contacts-list li button img{
@@ -259,7 +266,16 @@ TODO: Lista abaixo incompleta
 
 .teachers-container h2{
     left: 0;
-    top: -47px;
+    top: -45px;
+    background-color: var(--color01);
+}
+
+.teachers-container .contacts-list{
+    background-color: var(--color01);
+}
+
+.teachers-container .contacts-list li{
+    background-color: var(--color02);
 }
 
 /* ----- Específico Secretaria ----- */
@@ -269,36 +285,55 @@ TODO: Lista abaixo incompleta
 
 .secretaries-container h2{
     right: 10px; 
-    top: -47px;
+    top: -45px;
+    background-color: var(--color03);
 }
 
 .secretaries-container .contacts-list{
     border-top-right-radius: 0;
     border-top-left-radius: var(--averageRadius);
+    background-color: var(--color03);
+
+}
+
+.secretaries-container .contacts-list li{
+    background-color: var(--color04);
+}
+
+.secretaries-container .contacts-list li button{
+    background-color: #bfd2f4;
+}
+
+.secretaries-container .contacts-list li button:hover{
+    background-color: #a4bfec;
+}
+
+.secretaries-container .contacts-list li a{
+    color: #000;
 }
 
 /* ----- Específico Toggle Contacts ----- */
 /* TODO: Reformular de maneira inteligente / colocar PALETA de cores correta */
-.contacts-container >:not(.hidden){
+ .contacts-container >:not(.hidden){
    z-index: 1;
 }
-
+/*
 .contacts-container >:not(.hidden) > h2{
-    background-color: var(--color02);    
-}
-
-.contacts-container >:not(.hidden) > .contacts-list{
-    background-color: var(--color02);    
-}
-
-.contacts-container >:not(.hidden) > .contacts-list li{
     background-color: var(--color01);    
 }
 
-.contacts-container >:not(.hidden) > .contacts-list button{
-    background-color: var(--color02);    
+.contacts-container >:not(.hidden) > .contacts-list{
+    background-color: var(--color01);    
 }
 
+.contacts-container >:not(.hidden) > .contacts-list li{
+    background-color: var(--color02);    
+} 
+
+.contacts-container >:not(.hidden) > .contacts-list button{
+    background-color: hsla(0, 0%, 100%, 0.5);    
+}
+*/
 .contacts-container .hidden{
     position: absolute;
     top: 0;
@@ -308,7 +343,7 @@ TODO: Lista abaixo incompleta
 }
 
 .contacts-container .hidden > h2{
-    height: 100px;
+    height: 50px;
 }
 
 .contacts-container .hidden > .contacts-list{
@@ -549,7 +584,6 @@ footer > p{
         margin: auto;
     }
 
-
     .tips-container{
         max-width: var(--maxWidth);
         margin: auto;
@@ -557,7 +591,7 @@ footer > p{
     
     .contacts-container{
         margin: auto;
-        max-width: 800px;
+        max-width: 600px;
     }
 
     .adsflix-container{
